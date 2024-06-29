@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Alegreya Sans SC", sans-serif;
+  }
+
+  .container{
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background: transparent;
+    /* Semi-transparent background */
+    backdrop-filter: blur(10px);
+    /* Blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional: adds a slight shadow for depth */
+    position: sticky;
+    top: 0;
+    padding: 0px 58px;
+  }
+
+  .morse, .code-words, .morse-heading{
+    color: rgb(160, 25, 52);
+  }
+
+  .main-web-area{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 80px;
+    font-size: 1.2rem;
+  }
+
+  .para{
+    font-weight: bold;
+    text-align: center;
+  }
+
+  h2{
+    font-size: 1.8rem;
+  }
+
+  .two-textareas{
+    display: flex;
+    flex-direction: row;
+    gap: 6.2em;
+  }
+
+  .two-textareas p, .morse-heading{
+    text-align: center;
+  }
+
+  .two-textareas textarea{
+    resize: none;
+    border: 2px solid black;
+    outline: none;
+    padding: 8px;
+    font-size: 1rem;
+    width: 435px;
+    height: 340px;
+  }
+  .morse-list-area{
+    margin-top: 8em;
+  }
+
+  .unordered-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    margin-top: 50px;
+  }
+
+  li{
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 5px 0px;
+    font-weight: 500;
+  }
+
+
+

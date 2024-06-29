@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Morse Conversion</title>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="conversation.png" type="image/x-icon">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+  
+  <header class="header">
+        <h2 class="heading"><span class="morse">Morse</span> Master</h2>
+        <span  class="right-header-heading">
+          <h3>Morse code conversions</h3>
+          <h3  class="code-words">−− −−− ·−· ··· · −·−· −−− −·· ·</h3>
+        </span>
+  </header>
+  
+  <div class="container">
+    <div class="main-web-area">
+      <p class="para">
+        Type a text in English to convert into morse code and vice versa
+      </p>
+      <div class="two-textareas">
+        <span>
+          <p>
+            Here Write Text in English
+          </p>
+          <textarea
+            oninput="changeEnglishText()"
+            id="english-textarea"
+            name=""
+            id=""
+            class=""
+          ></textarea>
+        </span>
+        <span>
+          <p>
+            Here Write a Morse Code
+          </p>
+          <textarea
+            oninput="changeMorseCode()"
+            id="morse-textarea"
+            name=""
+            id=""
+            class=""
+          ></textarea>
+        </span>
+      </div>
+    </div>
+    <div class="morse-list-area">
+      <h2 class="morse-heading">Morse Code List</h2>
+      <ul class="unordered-list">
+        <li class="">
+          <span class="">A</span> <span>·−</span>
+        </li>
+        <li class="">
+          <span class="">B</span> <span>−···</span>
+        </li>
+        <li class="">
+          <span class="">C</span> <span>−·−·</span>
+        </li>
+        <li class="">
+          <span class="">D</span> <span>−··</span>
+        </li>
+        <li class="">
+          <span class="">E</span> <span>·</span>
+        </li>
+        <li class="">
+          <span class="">F</span> <span>··−·</span>
+        </li>
+        <li class="">
+          <span class="">G</span> <span>−−·</span>
+        </li>
+        <li class="">
+          <span class="">H</span> <span>····</span>
+        </li>
+        <li class="">
+          <span class="">I</span> <span>··</span>
+        </li>
+        <li class="">
+          <span class="">J</span> <span>·−−−</span>
+        </li>
+        <li class="">
+          <span class="">K</span> <span>−·−</span>
+        </li>
+        <li class="">
+          <span class="">L</span> <span>·−··</span>
+        </li>
+        <li class="">
+          <span class="">M</span> <span>−−</span>
+        </li>
+        <li class="">
+          <span class="">N</span> <span>−·</span>
+        </li>
+        <li class="">
+          <span class="">O</span> <span>−−−</span>
+        </li>
+        <li class="">
+          <span class="">P</span> <span>·−−·</span>
+        </li>
+        <li class="">
+          <span class="">Q</span> <span>−−·−</span>
+        </li>
+        <li class="">
+          <span class="">R</span> <span>·−·</span>
+        </li>
+        <li class="">
+          <span class="">S</span> <span>···</span>
+        </li>
+        <li class="">
+          <span class="">T</span> <span>−</span>
+        </li>
+        <li class="">
+          <span class="">U</span> <span>··−</span>
+        </li>
+        <li class="">
+          <span class="">V</span> <span>···−</span>
+        </li>
+        <li class="">
+          <span class="">W</span> <span>·−−</span>
+        </li>
+        <li class="">
+          <span class="">X</span> <span>−··−</span>
+        </li>
+        <li class="">
+          <span class="">Y</span> <span>−·−−</span>
+        </li>
+        <li class="">
+          <span class="">Z</span> <span>−−··</span>
+        </li>
+        <li class="">
+          <span class="">0</span> <span>−−−−−</span>
+        </li>
+        <li class="">
+          <span class="">1</span> <span>·−−−−</span>
+        </li>
+        <li class="">
+          <span class="">2</span> <span>··−−−</span>
+        </li>
+        <li class="">
+          <span class="">3</span> <span>···−−</span>
+        </li>
+        <li class="">
+          <span class="">4</span> <span>····−</span>
+        </li>
+        <li class="">
+          <span class="">5</span> <span>·····</span>
+        </li>
+        <li class="">
+          <span class="">6</span> <span>−····</span>
+        </li>
+        <li class="">
+          <span class="">7</span> <span>−−···</span>
+        </li>
+        <li class="">
+          <span class="">8</span> <span>−−−··</span>
+        </li>
+        <li class="">
+          <span class="">9</span> <span>−−−−·</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
