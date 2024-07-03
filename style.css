@@ -1,100 +1,111 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Alegreya Sans SC", sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: "Alegreya Sans SC", sans-serif;
+  background-color: #f7f7f7;
+}
 
-  .container{
-    display: block;
-    width: 90%;
-    margin: auto;
-  }
+.container {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
 
-  .header{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    background: transparent;
-    /* Semi-transparent background */
-    backdrop-filter: blur(10px);
-    /* Blur effect */
-    -webkit-backdrop-filter: blur(10px);
-    /* Safari support */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Optional: adds a slight shadow for depth */
-    position: sticky;
-    top: 0;
-    padding: 0px 58px;
-  }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  padding: 10px 20px;
+  z-index: 1000;
+}
 
-  .morse, .code-words, .morse-heading{
-    color: rgb(160, 25, 52);
-  }
+.morse, .code-words, .morse-heading {
+  color: rgb(160, 25, 52);
+}
 
-  .main-web-area{
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    margin-top: 80px;
-    font-size: 1.2rem;
-  }
+.main-web-area {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 80px;
+  font-size: 1.2rem;
+  align-items: center;
+}
 
-  .para{
-    font-weight: bold;
-    text-align: center;
-  }
+.para {
+  font-weight: bold;
+  text-align: center;
+}
 
-  h2{
-    font-size: 1.8rem;
-  }
+h2 {
+  font-size: 1.8rem;
+}
 
-  .two-textareas{
-    display: flex;
-    flex-direction: row;
-    gap: 6.2em;
-  }
+.two-textareas {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
 
-  .two-textareas p, .morse-heading{
-    text-align: center;
-  }
+.two-textareas p, .morse-heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
 
-  .two-textareas textarea{
-    resize: none;
-    border: 2px solid black;
-    outline: none;
-    padding: 8px;
-    font-size: 1rem;
-    width: 435px;
-    height: 340px;
-    position: relative;
-  }
-  .morse-list-area{
-    margin-top: 8em;
-  }
+.two-textareas textarea {
+  resize: none;
+  border: 2px solid #ccc;
+  outline: none;
+  padding: 15px;
+  font-size: 1rem;
+  width: 400px;
+  height: 300px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
 
-  .unordered-list{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 300px;
-    margin-top: 50px;
-  }
+.two-textareas textarea:focus {
+  border-color: rgb(160, 25, 52);
+  box-shadow: 0 0 8px rgba(160, 25, 52, 0.3);
+}
 
-  li{
-    list-style: none;
-    font-size: 1.3rem;
-    margin: 5px 0px;
-    font-weight: 500;
-  }
+.morse-list-area {
+  margin-top: 8em;
+}
+
+.unordered-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 300px;
+  margin-top: 50px;
+}
+
+li {
+  list-style: none;
+  font-size: 1.3rem;
+  margin: 5px 0px;
+  font-weight: 500;
+}
 
 /* code for copy to clipboard button  */
 .copy-button {
   position: absolute;
-  /* top: 10px; */
-  right: 11.5rem;
+  right: 9rem;
+  /* top: -25px; Adjusted to be above the textarea */
   cursor: pointer;
-  background-color: #007bff;
   background-color: white;
   color: black;
   border: none;
@@ -103,13 +114,34 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -28px;
-  
+  margin-top: -29px;
 }
-.copy-button:hover{
+
+.copy-button:hover {
   border: 2px solid black;
 }
+
 .copy-button i {
   font-size: 16px;
 }
 
+/* code for switch button  */
+.switch-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  transition: background-color 0.3s ease;
+}
+
+.switch-button:hover {
+  background-color: #0056b3;
+}

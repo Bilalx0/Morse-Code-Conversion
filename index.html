@@ -30,19 +30,19 @@
       </p>
       <div class="two-textareas">
         <span>
-          <p>
+          <p id="label-1">
            Write Text in English
           </p>
           <textarea
             oninput="changeEnglishText()"
             id="english-textarea"
             placeholder="Write here..."
-
-            class=""
+            class="text-area text-area-1"
           ></textarea>
         </span>
+        <button class="switch-button" id="switch-button" onclick="switchTexts()">⇄</button>
         <span>
-          <p>
+          <p id="label-2">
             Get a Morse Code
           </p>
           <button class="copy-button" onclick="copyToClipboard()"> 
@@ -53,8 +53,7 @@
             oninput="changeMorseCode()"
             id="morse-textarea"
             placeholder="Get here..."
-            
-            class=""
+            class="text-area text-area-2"
           ></textarea>
           </div>
         </span>
