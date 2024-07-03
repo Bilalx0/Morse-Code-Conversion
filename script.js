@@ -45,3 +45,28 @@ function changeMorseCode() {
 
     document.getElementById('english-textarea').value = englishText.trim();
 }
+
+
+//  code to make the copy to clipboard functional 
+function copyToClipboard() {
+    // Get the text from the textarea
+    var textToCopy = document.getElementById('morse-textarea').value;
+    
+    // Create a temporary textarea element
+    var tempTextarea = document.createElement('textarea');
+    tempTextarea.value = textToCopy;
+    document.body.appendChild(tempTextarea);
+    
+    // Select the text in the textarea
+    tempTextarea.select();
+    tempTextarea.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the text to the clipboard
+    document.execCommand('copy');
+    
+    // Remove the temporary textarea element
+    document.body.removeChild(tempTextarea);
+    
+    // Provide feedback to the user
+    alert('Text copied to clipboard!');
+}
