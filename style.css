@@ -145,3 +145,87 @@ li {
 .switch-button:hover {
   background-color: #0056b3;
 }
+/* responsiveness */
+/* Responsive CSS */
+
+/* For tablets and larger mobile devices */
+@media (max-width: 768px) {
+  .two-textareas {
+      gap: 1em;
+  }
+
+  .two-textareas textarea {
+      height: 250px;
+  }
+
+  .copy-button {
+      right: 5%;
+      top: -40px;
+  }
+
+  .switch-button {
+      margin: 0;
+  }
+}
+/* Responsive CSS for small devices */
+@media (max-width: 480px) {
+  
+  .header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .two-textareas {
+      flex-direction: row;
+      gap: 0.5em;
+      width: 100%;
+      padding: 0 1em;
+      box-sizing: border-box;
+  }
+
+  .two-textareas span {
+      width: 45%;
+      box-sizing: border-box;
+  }
+
+  .two-textareas textarea {
+      height: 200px;
+      width: 100%;
+      box-sizing: border-box;
+  }
+
+  .copy-button {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      z-index: 99;
+  }
+
+  .switch-button {
+      margin: 0;
+  }
+
+  .two-textareas p {
+      font-size: 1rem;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+  }
+
+.morse-list-area {
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+
+.unordered-list {
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.unordered-list li {
+  margin: 5px 0;
+}
+}
