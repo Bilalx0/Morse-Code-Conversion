@@ -24,12 +24,12 @@
   </header>
   
   <div class="container">
-    <div class="main-web-area">
+   <div class="main-web-area">
       <p class="para">
         Type a text in English to convert into morse code and vice versa
       </p>
       <div class="two-textareas">
-        <span>
+        <span id="span1">
           <p id="label-1">
            Write Text in English
           </p>
@@ -40,9 +40,9 @@
             class="text-area text-area-1"
           ></textarea>
         </span>
-        <button class="switch-button" id="switch-button" onclick="switchTexts()">⇄</button>
-        <span>
-         <div class="copy">
+        <button class="switch-button" id="switch-button" onclick="swapElements()">⇄</button>
+        <span id="span2">
+          <div class="copy">
             <p id="label-2">
               Get a Morse Code
             </p>
